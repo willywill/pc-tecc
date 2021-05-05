@@ -1,14 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --red-5: #960035;
-  --red-4: #c50035;
-  --red-3: #d71818;
-  --red-main: #ff002a;
-  --red-1: #f66060;
-  --low-prio: #707070;
-  --grey-dark-back: #212121;
-  --darker-back: #121212;
-  --grey-unselect: #c4c4c4;
-  --unselect-text: #707070;
+  --red-500: #960035;
+  --red-400: #c50035;
+  --red-300: #d71818;
+  --red-200: #ff002a;
+  --red-100: #f66060;
+  --grey-400: #121212;
+  --grey-300: #212121;
+  --grey-200: #707070;
+  --grey-100: #c4c4c4;
 }
 
 body {
@@ -25,34 +28,45 @@ code {
     monospace;
 }
 
-.text-red-5 {
-  color: var(--red-5);
+.text-red-500 {
+  color: var(--red-500);
 }
 
-.text-red-4 {
-  color: var(--red-4);
+.text-red-400 {
+  color: var(--red-400);
 }
 
-.text-red-3 {
-  color: var(--red-3);
+.text-red-300 {
+  color: var(--red-300);
 }
 
-.text-red-main {
-  color: var(--red-main);
+.text-red-200 {
+  color: var(--red-200);
 }
 
-.text-red-1 {
-  color: var(--red-1);
+.text-red-100 {
+  color: var(--red-100);
 }
 
-.text-low-prio {
-  color: var(--low-prio);
+.text-grey-100 {
+  color: #707070;
 }
 
-.bg-grey-dark-back {
-  background-color: var(--grey-dark-back);
+.text-grey-200 {
+  color: var(--grey-200);
 }
 
-.bg-darker-back {
-  background-color: var(--darker-back);
+.text-grey-300 {
+  color: var(--grey-300)
+}
+.text-grey-400 {
+  color: var(--grey-400);
+}
+
+.bg-grey-300 {
+  background-color: var(--grey-300);
+}
+
+.bg-darker-400 {
+  background-color: var(--grey-400);
 }
