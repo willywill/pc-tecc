@@ -1,0 +1,11 @@
+.layout-grid {
+  display: grid;
+  column-gap: 1em;
+  row-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
