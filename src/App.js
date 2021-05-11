@@ -1,30 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Layout from './components/Layout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-blue-900">
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Main = () => <div className="w-200 bg-gray-50 text-center text-2xl" style={{ gridArea: 'main' }}>Main</div>;
+const Sidebar = () => <div className="w-200 bg-white text-center text-2xl" style={{ gridArea: 'sidebar' }}>Sidebar</div>;
+
+const App = () => (
+  <Layout>
+    <Header />
+    <Main />
+    <Sidebar />
+    <Footer />
+  </Layout>
+);
 
 export default App;
