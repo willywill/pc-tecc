@@ -1,23 +1,17 @@
 import React from 'react';
 
-const Footer = () => {
-  const text = 'Footer';
-
-  return (
-    <div className="w-200 bg-gray-100 text-center text-2xl" style={{ gridArea: 'footer' }}>
-      {text}
-    </div>
-  );
-};
+const Footer = () => (
+  <div className="flex items-center justify-center bg-black" style={{ gridArea: 'footer' }}>
+    <p className="text-white text-center">
+      Copyright
+      {' '}
+      &copy;
+      {' '}
+      {(new Date().getFullYear())}
+    </p>
+  </div>
+);
 
 Footer.displayName = 'Footer';
-
-// Footer.propTypes = {
-
-// };
-
-// Footer.defaultProps = {
-
-// };
 
 export default Footer;
