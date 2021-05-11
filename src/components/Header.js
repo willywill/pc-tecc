@@ -12,12 +12,4 @@ const Header = () => {
 
 Header.displayName = 'Header';
 
-// Header.propTypes = {
-
-// };
-
-// Header.defaultProps = {
-
-// };
-
 export default Header;
