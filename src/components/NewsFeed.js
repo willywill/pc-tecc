@@ -40,8 +40,11 @@ const articles = [
   },
 ];
 
+// TODO: Pagination? Does this act as some top articles based on X data?
+// Should the user click some link to drill down more into the blog area?
+// If so we probably need more content in general area of the site
 const NewsFeed = () => (
-  <div style={{ gridArea: 'main' }}>
+  <section className="pr-20" style={{ gridArea: 'main' }}>
     <h2 className="text-white text-left text-2xl font-bold px-10">
       News Feed
     </h2>
@@ -56,7 +59,7 @@ const NewsFeed = () => (
       <ArticlePreview article={articles[0]} />
       <ArticlePreview article={articles[1]} />
     </div>
-  </div>
+  </section>
 );
 
 NewsFeed.displayName = 'NewsFeed';
