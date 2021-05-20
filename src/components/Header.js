@@ -2,9 +2,9 @@
 import React from 'react';
 
 const Header = () => (
-  <div className="flex items-center px-4" style={{ gridArea: 'header' }}>
-    <img className="mr-10" width="150" src="/logo.svg" alt="test" />
-    <div className=" bg-white bg-opacity-10 relative text-white px-3 rounded-xl" style={{ width: '80%' }}>
+  <div className="flex flex-col  md:flex-row items-center px-4" style={{ gridArea: 'header' }}>
+    <img className="md:mr-10" width="150" src="/logo.svg" alt="test" />
+    <div className="bg-white bg-opacity-10 relative text-white px-3  rounded-xl" style={{ width: '80%' }}>
       <input className="w-full outline-none bg-white bg-opacity-0 p-3 text-base placeholder-white placeholder-opacity-30 rounded-lg focus:shadow-outline" type="text" placeholder="Search articles, authors or categories" />
       <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#FF002A">
