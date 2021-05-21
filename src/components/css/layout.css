@@ -10,20 +10,16 @@
     "footer footer footer footer";
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .layout-grid {
-    height: 200%;
     display: grid;
     column-gap: 1em;
     row-gap: 1em;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-areas: 
       "header"
       "main"
       "footer";
     overflow-x: hidden;
-  }
-  .footer-end{
-    
   }
 }

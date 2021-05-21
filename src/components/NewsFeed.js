@@ -44,7 +44,7 @@ const articles = [
 // Should the user click some link to drill down more into the blog area?
 // If so we probably need more content in general area of the site
 const NewsFeed = () => (
-  <section className="pr-8 md:pr-20" style={{ gridArea: 'main' }}>
+  <section className="pr-8 md:pr-20 mt-10 md:mt-0" style={{ gridArea: 'main' }}>
     <h2 className="text-white text-center md:text-left text-2xl font-bold px-10 pr-4 md:pr-0">
       News Feed
     </h2>

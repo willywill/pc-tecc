@@ -30,13 +30,14 @@ const ArticlePreview = ({ article }) => (
           @
           {article.author.userName}
         </p>
-        {/* TODO: Handle too many tags */}
-        {article.tags.map((tag) => (
-          <p key={tag} className="text-red-400 font-bold mr-2">
-            #
-            {tag}
-          </p>
-        ))}
+        <div className="flex flex-wrap">
+          {article.tags.map((tag) => (
+            <p key={tag} className="text-red-400 font-bold mr-2">
+              #
+              {tag}
+            </p>
+          ))}
+        </div>
       </div>
       <div className="flex items-center">
         <p className="text-white mr-2">
