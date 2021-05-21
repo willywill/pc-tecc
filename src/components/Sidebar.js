@@ -10,7 +10,7 @@ const sidebarLinks = [
 
 // TODO: Make this a fixed sidebar on bigger displays
 const Sidebar = () => (
-  <div className="flex flex-col mt-20" style={{ gridArea: 'sidebar', transform: 'skewY(-10deg)', maxWidth: '500px' }}>
+  <div className="flex flex-col mt-20 hidden md:block" style={{ gridArea: 'sidebar', transform: 'skewY(-10deg)', maxWidth: '500px' }}>
     {sidebarLinks.map((link) => (
       <div className="py-10 my-2 bg-white rounded-r-3xl bg-opacity-10 hover:bg-opacity-20 transition-all cursor-pointer">
         <p className="text-white text-center font-bold text-2xl" style={{ transform: 'skewY(10deg)' }}>
