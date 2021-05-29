@@ -1,17 +1,33 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Layout from './components/Layout';
 import Sidebar from './components/Sidebar';
 import NewsFeed from './components/NewsFeed';
+import BlogPost from './components/BlogPost';
 
 const App = () => (
-  <Layout>
-    <Header />
-    <NewsFeed />
-    <Sidebar />
-    <Footer />
-  </Layout>
+  <Router>
+    <Layout>
+      <Header />
+      <Switch>
+        <Route path="/james">
+          <NewsFeed />
+          <Sidebar />
+        </Route>
+        <Route path="/post">
+          <Sidebar />
+          <BlogPost />
+        </Route>
+      </Switch>
+      <Footer />
+    </Layout>
+  </Router>
 );
 
 export default App;
