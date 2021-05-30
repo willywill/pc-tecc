@@ -16,11 +16,11 @@ const App = () => (
     <Layout>
       <Header />
       <Switch>
-        <Route path="/james">
+        <Route exact path="/">
           <NewsFeed />
           <Sidebar />
         </Route>
-        <Route path="/post">
+        <Route path="/blog/post">
           <Sidebar />
           <BlogPost />
         </Route>
